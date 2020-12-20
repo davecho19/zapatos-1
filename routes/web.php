@@ -18,3 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/nosotros', 'ZapatosController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
