@@ -14,6 +14,10 @@ class ZapatosController extends Controller
      */
     public function __invoke(Request $request)
     {
-        return view('nosotros');
+
+        $zapatos = ['Niños','Adultos','Jovenes'];
+        $marcas = ['Adidas','Nike','Bunky'];
+
+        return view('zapatos.index', compact('zapatos','marcas'));// llmando a la vista
     }
 }
