@@ -4,7 +4,7 @@
     <li>{{$zapato}}</li>
 @endforeach
 
-<h1>Marcas.... Index</h1>
+<h1>Marcas.... Indexxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</h1>
 @foreach($marcas as $marca)
     <li>{{$marca}}</li>
 @endforeach
