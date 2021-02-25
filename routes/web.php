@@ -17,8 +17,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/nosotros', 'ZapatosController');
+
+Route::get('/pedidos', 'PedidoController@index')->name('tropical.index');
+Route::get('/tropical/create', 'PedidoController@create')->name('tropical.create');
+Route::post('/pedidos', 'PedidoController@store')->name('pedidos.store');
+Route::get('/pedidos/{pedido}', 'PedidoController@show')->name('tropical.show');
+Route::get('/pedidos/{pedido}/edit', 'PedidoController@edit')->name('tropical.edit');
+Route::put('/pedidos/{pedido}', 'PedidoController@update')->name('tropical.update');
+Route::delete('/pedidos/{pedido}', 'PedidoController@destroy')->name('tropical.destroy');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+
+
